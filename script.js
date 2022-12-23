@@ -41,3 +41,40 @@ if (name === "Paul") {
 } else {
     console.log("Go away!");
 }
+
+const names = "Bob";
+
+if (names === "Bob") {
+    console.log("Hello, Bob!");
+} else {
+    console.log("You're not Bob, go away");
+}
+
+const userName = prompt("What's your name?");
+console.log(userName);
+
+const password = prompt("What's your password");
+
+if (password === "secret") {
+    console.log("Welcome !");
+} else {
+    console.log("Wrong password !");
+}
+
+const age = prompt("How old are you?");
+console.log(typeof(age))
+
+const ageNumber = parseInt(age);
+console.log(typeof(ageNumber));
+
+const user = prompt("How old are you ?");
+
+if (user < 3) {
+    console.log("Hello, Baby !");
+} else if (user < 18) {
+    console.log("Hi !");
+} else if (user < 100) {
+    console.log("Greetings");
+} else {
+    console.log("Wow...");
+}
