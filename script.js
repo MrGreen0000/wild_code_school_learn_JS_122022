@@ -1,41 +1,40 @@
-function helloWorld (){
-    console.log("Hello, ");
-    console.log("World !");
-}
+const fruits =["Kiwi", "Apple", "Pineapple"];
 
-helloWorld();
+console.log(fruits[0]);
 
-function sayHello(name, age){
-    console.log("Hello " + name + "!" + " "+ age + " ans") ;
-}
+console.log(fruits[1]);
 
-sayHello("Naji", 44);
+console.log(fruits[2]);
 
-const name = "Alexandra";
+fruits[0] = "Banana";
+console.log(fruits[0]);
 
-console.log(`Hello ${name}`);
-console.log(`C'est vrai: ${1 < 2}`);
+const animals = ["Tiger", "Elephant", "Monkey"];
 
-function sum(a,b){
-    return a + b;
-}
+console.log(animals);
 
-console.log(sum(1,2))
+console.log(fruits.length);
 
-function login(name, password){
-    if(name === "Bob" && password === "secret"){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
+fruits.push("Banana");
+console.log(fruits);
 
-let userName = prompt("What's your name?");
-let userPassword = prompt("What's your password?");
+animals.push("Giraffe");
+console.log(animals);
 
-if(login(userName, userPassword)){
-    console.log("Welcome!");
-}else{
-    console.log("Wrong credentials...");
-}
+fruits.unshift("Strawberry");
+console.log(fruits);
+
+animals.unshift("Rhinoceros");
+console.log(animals);
+
+fruits.pop();
+console.log(fruits);
+
+animals.pop();
+console.log(animals);
+
+fruits.shift();
+console.log(fruits);
+
+animals.shift();
+console.log(animals);
