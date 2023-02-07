@@ -1,40 +1,41 @@
-const fruits =["Kiwi", "Apple", "Pineapple"];
+for (let i = 0; i < 5; i ++) {
+    console.log(`Turn number ${i}`)
+} 
 
-console.log(fruits[0]);
 
-console.log(fruits[1]);
+for (let j = 0 ; j < 10 ; j++) {
+    console.log(`Number ${j}`)
+}
 
-console.log(fruits[2]);
+const fruits = ["Apple", "Peach", "Banana"];
 
-fruits[0] = "Banana";
-console.log(fruits[0]);
+for (let k = 0; k < fruits.length; k++) {
+    console.log(fruits[k]);
+} 
 
-const animals = ["Tiger", "Elephant", "Monkey"];
 
-console.log(animals);
+const animals =["Monkey", "Tiger", "Eagle"]
 
-console.log(fruits.length);
+for (let l = 0; l < animals.length; l++) {
+    console.log(animals[l]);
+}
 
-fruits.push("Banana");
-console.log(fruits);
+let i = 0;
 
-animals.push("Giraffe");
-console.log(animals);
+while (i < 5) {
+    console.log(`turn number ${i}`);
+    i++;
+}
 
-fruits.unshift("Strawberry");
-console.log(fruits);
+let j = 10;
 
-animals.unshift("Rhinoceros");
-console.log(animals);
+while (j >= 0) {
+    console.log(`turn number ${j}`);
+    j--;
+}
 
-fruits.pop();
-console.log(fruits);
-
-animals.pop();
-console.log(animals);
-
-fruits.shift();
-console.log(fruits);
-
-animals.shift();
-console.log(animals);
+let k =0;
+do{
+    console.log(`turn number ${k}`);
+    k++;
+}while (k < 5);
