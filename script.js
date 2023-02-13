@@ -1,41 +1,119 @@
-for (let i = 0; i < 5; i ++) {
-    console.log(`Turn number ${i}`)
-} 
+// const apple = {
+//     color: "#00FF00",
+//     diameter: 1,
+//     isEaten: false,
+//     vitamins: ["A", "B1", "B2", "B6", "C"],
+//     variety: { code: 576, name: 'Granny Smith' },
+//     gather: function () {
+//         return "Here's one apple!";
+//     }
+// }
+
+// console.log(apple.color);
+// console.log(apple['diameter']);
+// console.log(apple.vitamins[2]);
+// console.log(apple.variety.name);
+// console.log(apple.gather());
 
 
-for (let j = 0 ; j < 10 ; j++) {
-    console.log(`Number ${j}`)
-}
 
-const fruits = ["Apple", "Peach", "Banana"];
+// while(true) {
+//     let userChoice =prompt("What kind of property do you want to display?");
+//     console.log(apple[userChoice]);
+// }
 
-for (let k = 0; k < fruits.length; k++) {
-    console.log(fruits[k]);
-} 
+// const billyTheCat = {
+//     name: "Billy",
+//     color: "0A0909",
+//     favoriteFoods: ["Meet", "Fish", "Rice", "Pasta", "Chicken" ],
+//     isHungry: true,
+//     meow: function () {
+//         return "Meooow";
+//     }
+// };
+
+// while(true) {
+//     let userChoice = prompt("What kind of property do you want to display?");
+//     console.log(billyTheCat[userChoice]);
+// }
+
+// apple.growsOn = "Tree";
+// apple.color = "Red";
+
+// delete apple.color;
+
+// console.log(apple.growsOn);
+// console.log(apple.color);
+// console.log(apple);
+
+// const fruits = [
+//     { name: "apple", color: "green" },
+//     { name: "Pineapple", color:"yellow" },
+//     { name: "Orange", color:"orange" },
+//     { name: "Cherry", color:"red" },
+//   ];
+
+//   console.log(fruits[0].color);
 
 
-const animals =["Monkey", "Tiger", "Eagle"]
+//   const animals = [
+//     {name: "Billy", species: "Cat", sound: "Meow"},
+//     {name: "Bob", species: "Dog", sound: "Woof"},
+//     {name: "Jimmy", species: "Squirrel", sound: "Chit"},  
+//   ];
 
-for (let l = 0; l < animals.length; l++) {
-    console.log(animals[l]);
-}
+//   for (let i = 0; i < animals.length; i++) {
+//     console.log(animals[i].sound);
+//   }
 
-let i = 0;
+// const person1 = {
+//     name: "Bob",
+//     age: 30,
+//     sayHello: function (){
+// console.log(`Hi, I'm ${this.name} and I'm ${this.age}`);
+//     }
+// };
 
-while (i < 5) {
-    console.log(`turn number ${i}`);
-    i++;
-}
+// person1.sayHello();
 
-let j = 10;
+// const apple = {
+// 	isEaten: false,
+// 	eat: function(){
+//     // We check the value of isEaten
+// 		if(this.isEaten){
+//       // If isEaten is true, we display a specific message
+//       console.log('The fruit has already been eaten...');
+//     }
+//     else{
+//     // Otherwise we change the state of isEaten to true
+//       this.isEaten = true;
+//       console.log('You eat the apple...')
+//     }
+// 	}
+// }
 
-while (j >= 0) {
-    console.log(`turn number ${j}`);
-    j--;
-}
+// console.log(apple.isEaten);
+// apple.eat();
+// console.log(apple.isEaten);
+// apple.eat();
 
-let k =0;
-do{
-    console.log(`turn number ${k}`);
-    k++;
-}while (k < 5);
+
+const  billyTheCat = {
+    name: "Billy",
+    species: "Cat",
+    isHungry: true,
+    feed: function () {
+      if (this.isHungry) {
+        this.isHungry = false;
+        console.log(`${this.name} is  eating...`);
+      } else {
+        console.log(`${this.name} is not hungry`);
+      }
+    }
+  };
+  
+  billyTheCat.feed();
+  billyTheCat.feed();
+  billyTheCat.feed();
+  billyTheCat.feed();
+
